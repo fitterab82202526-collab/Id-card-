@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHREE S K PATEL ITI KADI — ID Card</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+</head>
+<body>
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <div class="login-seal">ITI</div>
+    <h1>SHREE S K PATEL ITI</h1>
+    <h2>ID CARD PORTAL</h2>
+    <label>Username<input id="loginUser" autocomplete="username" placeholder="Enter username"></label>
+    <label>Password<input id="loginPass" type="password" autocomplete="current-password" placeholder="Enter password"></label>
+    <button id="loginBtn">LOGIN</button>
+    <p id="loginError"></p>
+  </div>
+</div>
+<div id="portalApp" class="portal-app">
+<header><h1>SHREE S K PATEL ITI KADI</h1><p>GIA-509 · TRAINEE ID CARD</p></header>
+<main>
+<section class="panel">
+<h2>Search Student</h2>
+<div class="search"><input id="search" placeholder="Name or Enrollment Number"><select id="trade"><option value="">All Trades</option></select></div>
+<div id="results"></div><small id="info"></small>
+</section>
+<section class="panel">
+<div class="top"><h2>Student</h2><span id="photoStatus">Photo not found</span></div>
+<div class="summary"><b id="sName">—</b><span id="sEnrol">—</span><span id="sTrade">—</span></div>
+<div class="actions">
+<label class="upload"><input id="photoInput" type="file" accept="image/*">📷 Upload / Replace Photo</label>
+<button id="generate">Generate ID Card</button><button id="print">Print</button><button id="pdf">Save PDF</button>
+</div>
+<small>Photo is saved in your Google Drive through Apps Script and automatically loaded again by Enrollment No.</small>
+</section>
+<section class="panel preview">
+<h2>ID Card Preview</h2>
+<article id="card" class="idcard">
+<div class="head"><div class="seal">ITI</div><div><h3>SHREE S K PATEL ITI KADI</h3><small>GIA-509 · S V CAMPUS KADI</small><strong>TRAINEE IDENTITY CARD</strong></div></div>
+<div class="photo"><div id="photoBox">PHOTO</div></div>
+<div class="details">
+<div><span>Name</span><b id="cName">—</b></div>
+<div><span>Enrollment No.</span><b id="cEnrol">—</b></div>
+<div><span>Trade</span><b id="cTrade">—</b></div>
+<div><span>Batch / Session</span><b id="cBatch">—</b></div>
+<div><span>DOB</span><b id="cDob">—</b></div>
+<div class="address"><span>Address</span><b id="cAddress">—</b></div>
+</div>
+<div class="sign"><span>Student Signature</span><span>Principal</span></div>
+<footer>If found, please return to the institute.</footer>
+</article>
+</section>
+</main>
+<div id="toast"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
