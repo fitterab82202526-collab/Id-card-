@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbw7gG2dYAUDrgT6E98QDp1vKYPdhZ9Wgr9jyR1OoThZQ6CxlTB_n0q1e_WVOTajtQ1_/exec";
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbzv6HldKj9WSjuaNvuVEGqxEYXpzssvu6AnNTfKGk-HOVmwcGsbf0bUPEHjmJ3bH86d/exec";
 const students=window.ITI_STUDENTS||[];let selected=null,photoData=null;
 const $=id=>document.getElementById(id);
 const norm=v=>String(v??"").toLowerCase().replace(/[^a-z0-9]+/g,"");
